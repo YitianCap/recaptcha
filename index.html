@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Google reCAPTCHA test</title>
+    <meta charset=utf-8>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script>
+        function sub() {
+            grecaptcha.reset();
+        }
+    </script>
+    <style>
+        .captchaWrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="captchaWrapper">
+        <div class="g-recaptcha" data-sitekey="6LcHM54UAAAAACGHXxcChkESZz-jFPoKXYNu0EcJ" data-callback='sub'></div>
+    </div>
+</body>
+
+</html>
